@@ -750,7 +750,7 @@ body {
 .dark-section-title .title-orange {
   color: var(--color-secondary);
   display: block;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 /* ========================================
@@ -855,6 +855,95 @@ body {
   font-weight: 600;
   margin: 0;
   line-height: 1.4;
+}
+
+/* ========================================
+   Partners Section
+   ======================================== */
+
+.partners-section {
+  background-color: var(--color-white);
+  padding: 5rem 2rem;
+}
+
+.partners-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.partners-header {
+  margin-bottom: 3rem;
+}
+
+.partners-title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.partners-title .title-text {
+  display: block;
+  color: var(--color-text);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.partners-title .title-highlight {
+  display: block;
+  white-space: nowrap;
+}
+
+.partners-title .title-primary {
+  color: var(--color-primary);
+
+  margin-right: 0.5rem;
+  display: inline;
+}
+
+.partners-title .title-secondary {
+  color: var(--color-secondary);
+
+  display: inline;
+}
+
+.partners-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem 4rem;
+  margin-bottom: 3rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.partner-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partner-logo img {
+  max-width: 180px;
+  height: auto;
+  object-fit: contain;
+  transition: transform var(--transition-normal),
+    opacity var(--transition-normal);
+}
+
+.partner-logo img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.partners-footer {
+  color: var(--color-primary);
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
 }
 
 /* ========================================
@@ -1076,6 +1165,32 @@ body {
 
   .insurance-text {
     font-size: 1.125rem;
+  }
+
+  /* Partners Section Responsive - Tablet */
+  .partners-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .partners-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .partners-title {
+    font-size: 2.75rem;
+  }
+
+  .partners-logos {
+    gap: 2rem 3rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .partner-logo img {
+    max-width: 150px;
+  }
+
+  .partners-footer {
+    font-size: 1rem;
   }
 }
 
@@ -1328,6 +1443,32 @@ body {
 
   .insurance-text {
     font-size: 1rem;
+  }
+
+  /* Partners Section Responsive - Mobile */
+  .partners-section {
+    padding: 3rem 1rem;
+  }
+
+  .partners-header {
+    margin-bottom: 2rem;
+  }
+
+  .partners-title {
+    font-size: 2rem;
+  }
+
+  .partners-logos {
+    gap: 1.5rem 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .partner-logo img {
+    max-width: 120px;
+  }
+
+  .partners-footer {
+    font-size: 0.938rem;
   }
 }
 
