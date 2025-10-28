@@ -456,11 +456,85 @@ body {
 }
 
 .about-text {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   line-height: 1.8;
   color: var(--color-text);
   margin: 0;
   font-weight: 400;
+}
+
+/* ========================================
+   Vehicle Insurance Section
+   ======================================== */
+
+.vehicle-insurance-section {
+  background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
+  padding: 5rem 2rem;
+}
+
+.vehicle-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* Vehicle Content (Left Side) */
+.vehicle-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.vehicle-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.title-primary {
+  color: var(--color-primary);
+  display: block;
+}
+
+.title-secondary {
+  color: var(--color-secondary);
+  display: block;
+}
+
+.vehicle-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.vehicle-text {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  margin: 0;
+}
+
+/* Vehicle Image (Right Side) */
+.vehicle-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vehicle-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+
+  transition: transform var(--transition-normal);
+}
+
+.vehicle-img:hover {
+  transform: scale(1.02);
 }
 
 /* ========================================
@@ -550,6 +624,32 @@ body {
   .about-text {
     font-size: 1rem;
   }
+
+  /* Vehicle Insurance Responsive - Tablet */
+  .vehicle-insurance-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .vehicle-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .vehicle-content {
+    order: 1;
+  }
+
+  .vehicle-image {
+    order: 2;
+  }
+
+  .vehicle-title {
+    font-size: 2.75rem;
+  }
+
+  .vehicle-text {
+    font-size: 1rem;
+  }
 }
 
 /* Small Mobile (480px and below) */
@@ -623,6 +723,38 @@ body {
 
   .about-content {
     gap: 1.25rem;
+  }
+
+  /* Vehicle Insurance Responsive - Mobile */
+  .vehicle-insurance-section {
+    padding: 3rem 1rem;
+  }
+
+  .vehicle-container {
+    gap: 2rem;
+  }
+
+  .vehicle-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .vehicle-content {
+    gap: 1.5rem;
+  }
+
+  .vehicle-description {
+    gap: 1rem;
+  }
+
+  .vehicle-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  .vehicle-img {
+    border-radius: 12px;
   }
 }
 
