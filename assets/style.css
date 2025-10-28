@@ -88,7 +88,7 @@ body {
 .logo a {
   text-decoration: none;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 600;
   display: inline-block;
 }
 
@@ -436,7 +436,7 @@ body {
 
 .about-title {
   font-size: 3.75rem;
-  font-weight: 700;
+  font-weight: 600;
   margin: 0;
   line-height: 1.3;
 }
@@ -490,7 +490,7 @@ body {
 
 .vehicle-title {
   font-size: 3.5rem;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.2;
   margin: 0;
 }
@@ -535,6 +535,88 @@ body {
 
 .vehicle-img:hover {
   transform: scale(1.02);
+}
+
+/* ========================================
+   Insurance Platform Section
+   ======================================== */
+
+.platform-section {
+  background-color: var(--color-white);
+  padding: 5rem 2rem;
+}
+
+.platform-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* Platform Image (Left Side) */
+.platform-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  order: 1;
+}
+
+.platform-img {
+  max-width: 100%;
+  height: auto;
+  transition: transform var(--transition-normal);
+}
+
+.platform-img:hover {
+  transform: scale(1.02);
+}
+
+/* Platform Content (Right Side) */
+.platform-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  order: 2;
+}
+
+.platform-title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.platform-title .title-primary {
+  color: var(--color-primary);
+  display: block;
+}
+
+.platform-title .title-secondary {
+  color: var(--color-secondary);
+  display: block;
+}
+
+.platform-subtitle {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  margin: 0;
+  font-weight: 500;
+}
+
+.platform-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.platform-text {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  margin: 0;
 }
 
 /* ========================================
@@ -650,6 +732,36 @@ body {
   .vehicle-text {
     font-size: 1rem;
   }
+
+  /* Platform Section Responsive - Tablet */
+  .platform-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .platform-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .platform-image {
+    order: 2;
+  }
+
+  .platform-content {
+    order: 1;
+  }
+
+  .platform-title {
+    font-size: 2.75rem;
+  }
+
+  .platform-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .platform-text {
+    font-size: 1rem;
+  }
 }
 
 /* Small Mobile (480px and below) */
@@ -755,6 +867,41 @@ body {
 
   .vehicle-img {
     border-radius: 12px;
+  }
+
+  /* Platform Section Responsive - Mobile */
+  .platform-section {
+    padding: 3rem 1rem;
+  }
+
+  .platform-container {
+    gap: 2rem;
+  }
+
+  .platform-image {
+    order: 2;
+  }
+
+  .platform-content {
+    order: 1;
+    text-align: center;
+  }
+
+  .platform-title {
+    font-size: 2rem;
+  }
+
+  .platform-subtitle {
+    font-size: 1rem;
+  }
+
+  .platform-description {
+    gap: 1rem;
+  }
+
+  .platform-text {
+    font-size: 1rem;
+    line-height: 1.6;
   }
 }
 
