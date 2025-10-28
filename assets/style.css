@@ -1817,6 +1817,92 @@ html {
 }
 
 /* ========================================
+   Policy Pages (Privacy Policy, Terms & Conditions)
+   ======================================== */
+
+.policy-section {
+  background-color: var(--color-white);
+  padding: 5rem 2rem;
+  min-height: calc(100vh - 73px - 400px);
+}
+
+.policy-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.policy-title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin: 0 0 1.5rem 0;
+  line-height: 1.2;
+}
+
+.policy-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.policy-updated {
+  font-size: 1rem;
+  color: var(--color-text-light);
+  margin: 0;
+  font-style: italic;
+}
+
+.policy-placeholder {
+  padding: 3rem 2rem;
+  background-color: var(--color-background);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.policy-placeholder p {
+  font-size: 1.125rem;
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+/* Policy Page Responsive */
+@media screen and (max-width: 768px) {
+  .policy-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .policy-title {
+    font-size: 2.25rem;
+  }
+
+  .policy-content {
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .policy-section {
+    padding: 3rem 1rem;
+  }
+
+  .policy-title {
+    font-size: 1.875rem;
+  }
+
+  .policy-updated {
+    font-size: 0.875rem;
+  }
+
+  .policy-placeholder {
+    padding: 2rem 1.5rem;
+  }
+
+  .policy-placeholder p {
+    font-size: 1rem;
+  }
+}
+
+/* ========================================
    Footer Section
    ======================================== */
 
