@@ -408,6 +408,62 @@ body {
 }
 
 /* ========================================
+   About Section - We Are BAO Insurtech
+   ======================================== */
+
+.about-section {
+  background-color: var(--color-white);
+  padding: 5rem 2rem;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-header {
+  margin-bottom: 2.5rem;
+}
+
+.about-subtitle {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--color-text);
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 0.5px;
+}
+
+.about-title {
+  font-size: 3.75rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.brand-bao {
+  color: var(--color-primary);
+}
+
+.brand-insurtech {
+  color: var(--color-secondary);
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-text {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--color-text);
+  margin: 0;
+  font-weight: 400;
+}
+
+/* ========================================
    Responsive Design
    ======================================== */
 
@@ -477,6 +533,23 @@ body {
   .hero-content {
     order: 1;
   }
+
+  /* About Section Responsive - Tablet */
+  .about-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .about-subtitle {
+    font-size: 2rem;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
 }
 
 /* Small Mobile (480px and below) */
@@ -529,6 +602,28 @@ body {
     font-size: 0.75rem;
     padding: 0.4rem 0.875rem;
   }
+
+  /* About Section Responsive - Mobile */
+  .about-section {
+    padding: 3rem 1rem;
+  }
+
+  .about-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-text {
+    font-size: 0.938rem;
+    line-height: 1.7;
+  }
+
+  .about-content {
+    gap: 1.25rem;
+  }
 }
 
 /* Large Desktop (1400px and above) */
@@ -537,12 +632,16 @@ body {
     padding: var(--spacing-md) var(--spacing-xl);
   }
 
+  .logo a {
+    font-size: 2rem;
+  }
   .nav-menu {
     gap: var(--spacing-xl);
   }
 
+  .btn-cta,
   .nav-link {
-    font-size: var(--font-size-lg);
+    font-size: 1.5rem;
   }
 }
 
